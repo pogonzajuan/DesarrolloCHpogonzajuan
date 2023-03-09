@@ -60,7 +60,7 @@
     aside {
         flex-direction: column;
     }
-    aside .elegiProcesadorImg {
+    aside .galardonadosImg {
         margin-left: 15%;
     }
     .gridContainer footer .footerLogos img {
@@ -86,9 +86,9 @@
         justify-content: center;
         align-items: center;
     }
-    .mainProductos .productosCategoria .productosIntel,
-    .mainProductos .productosCategoria .productosAmd,
-    .mainProductos .productosCategoria .productosNotebook {
+    .mainAnime .animeCategoria .animesCards,
+    .mainAnime .animeCategoria .ovasCards,
+    .mainAnime .animeCategoria .estrenos {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -111,7 +111,7 @@
         padding-left: 0;
         flex-direction: column;
     }
-    .gridContainer2 .mainProductos .productosLinea{
+    .gridContainer2 .mainAnime .productosLinea{
         width: 200px;
     }
     .gridContainer2 footer .footerLogos img{
@@ -127,9 +127,9 @@
     }
 }
 @media screen and (max-width: 1360px){
-    .mainCategorias .categoriaPerifericos,
-    .mainCategorias .categoriaGabinetes,
-    .mainCategorias .categoriaGpu{
+    .mainMangas .categoriaPopulares,
+    .mainMangas .categoriaNovedades,
+    .mainMangas .categoriaInfa{
         flex-direction: column;
         justify-content: center;
         align-items: center;
