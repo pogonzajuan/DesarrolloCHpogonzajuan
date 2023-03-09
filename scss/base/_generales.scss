@@ -1,0 +1,42 @@
+@import "./variables";
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: $color-principal;
+}
+@font-face {
+    font-family: "pretender";
+    src: url(../fonts/pretender-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+.gridContainer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 150px 80px auto auto 130px;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "navBar navBar navBar"
+    "hero hero hero"
+    "premiados premiados premiados"
+    "footer footer footer"
+    ;
+}
+.gridContainer2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 150px 80px auto 130px;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header"
+    "navBar navBar navBar"
+    "hero hero hero"
+    "footer footer footer"
+    ;
+}

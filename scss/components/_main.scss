@@ -1,0 +1,321 @@
+
+.hero{
+    background-color: $color-principal;
+    grid-area: hero;
+    @extend %flex;
+    flex-direction: column;
+    .heroTitulo{
+        margin: 25px 10px;
+        text-align: center;
+        .titulosIndexDiv{
+            margin-bottom: 25px;
+            .titulosMainIndex{
+                font-size: xx-large;
+                font-weight: bolder;
+                text-transform: uppercase;
+            }
+        }
+        .heroBanner{
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 12px 1px rgb(33, 34, 36);
+            -webkit-box-shadow: 0px 0px 12px 1px rgb(50, 52, 54);
+            -moz-box-shadow: 0px 0px 12px 1px rgb(38, 39, 41);
+        }
+    }
+    .heroCarousel{
+        width: 50%;
+        box-shadow: 9px 7px 11px 1px rgba(54, 38, 25, 0.75);
+        -webkit-box-shadow: 9px 7px 11px 1px rgba(95, 65, 36, 0.75);
+        -moz-box-shadow: 9px 7px 11px 1px rgba(78, 50, 23, 0.75);
+    }
+}
+aside{
+    @extend %flex;
+    margin: 25px 35px;
+    background-color: $color-principal;
+    grid-area: premiados;
+    .galardonadosTitulo{
+        margin-right: 30px;
+    }
+    .galardonadosImg img{
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #f3f3f3;
+        box-shadow: 9px 7px 11px 1px rgba(70,127,163,0.75);
+        -webkit-box-shadow: 9px 7px 11px 1px rgba(70,127,163,0.75);
+        -moz-box-shadow: 9px 7px 11px 1px rgba(70,127,163,0.75);
+        height: 200px;
+        width: 200px;
+    }
+}
+.mainContacto{
+    grid-area: hero;
+    width: 100%;
+    @extend %flex;
+    flex-direction: column;
+    .contactoTitulos{
+        text-align: center;
+        h3{
+            font-style: oblique;
+        }
+    }
+    .contactoForm{
+        background-color: $color-nav;
+        color: white;
+        font-size: 18px;
+        border-radius: 12px;
+        padding: 25px;
+        display: grid;
+        gap: 25px;
+        p,
+        h2{
+            margin: 0;
+            padding: 0; 
+        }
+        .contactoFormTitulo{
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            h3{
+                font-style: oblique;
+            }
+        }
+        .contactoFormDatos{
+            display: grid;
+            gap: 20px;
+            .contactoFormDatosGrupo{
+                display: grid;
+                gap: 3px;
+                .contactoDatosTitulo {
+                    text-transform: uppercase;
+                    font-weight: 500px;
+                }
+            }
+        }
+        .contactoFormCliente{
+            display: grid;
+            gap: 20px;
+            .contactoLabel{
+                display: grid;
+                gap: 3px;
+            }
+            input{
+                border-radius: 7px;
+                border: none;
+                height: 30px;
+                padding: 5px 10px;
+            }
+            textarea{
+                border-radius: 7px;
+                border: none;
+                padding: 5px 10px;
+                height: auto;
+                resize: vertical;
+            }
+            .contactoFormButton{
+                width: 100%;
+                height: 50px;
+                background-color: $color-principal;
+                border-radius: 7px;
+                border: 1px solid $color-header;
+            }
+        }
+    }
+}
+.mainAnime{
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .productosLinea {
+        border-top: 1px solid black;
+        height: 2px;
+        width: 500px;
+        padding: 0;
+        margin: 20px auto 0 auto;
+    }
+    .animeTitulo{
+        padding-top: 10px;
+        margin: 50px 20px;
+        @extend %flex;
+        flex-direction: column;
+        text-align: center;
+        h2{
+            font-size: xx-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+    }
+    .animesTitulos{
+        margin: 50px;
+        text-shadow: 4px 4px 5px gray;
+        h3{
+            font-weight: bolder;
+            font-size: xx-large;
+            border-bottom: 1px solid #000;
+            padding-bottom: 3px;
+        }
+    }
+    .animesCategoria{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        .animesCards,
+        .ovasCards,
+        .estrenos{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .productoCard{
+            margin: 20px;
+            padding: 5px 5px 15px 5px;
+            background-color: $color-header;
+            color: white;
+            width: 305px;
+            height: auto;
+            text-align: center;
+            border-radius: 2px;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+            }
+            img{
+                width: 300px;
+                height: 350px;
+                padding: 2px;
+            }
+            p{
+                text-align: center;
+                padding: 5px;
+            }
+            a{
+                padding: 5px 15px;
+                text-decoration: none;
+                color: white;
+                background-color: $color-nav;
+                border-radius: 5px;
+                &:hover{
+                    color: $color-header;
+                }
+            }
+        }
+    }
+}
+.mainConocenos{
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 50px;
+    .conocenosHistoria{
+        @extend %flex;
+        flex-direction: row;
+        text-align: center;
+        margin-bottom: 30px;
+        .conocenosImgHistoria{
+            box-shadow: -11px -10px 5px 0px rgba(0,0,0,0.2);
+            -webkit-box-shadow: -11px -10px 5px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: -11px -10px 5px 0px rgba(0,0,0,0.2);
+        }
+        .historiaDiv{
+            padding-left: 25px;
+            .conocenosTitulos{
+                font-size: xx-large;
+                font-weight: bolder;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .conocenosVision{
+        @extend %flex;
+        flex-direction: row-reverse;
+        text-align: center;
+        .conocenosImgVision{
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+        }
+        .visionDiv{
+            padding-right: 25px;
+            .conocenosTitulos{
+                font-size: xx-large;
+                font-weight: bolder;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+.mainMangas{
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 50px;
+    .mangasTitulo{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        h2{
+            font-size: xx-large;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+    }
+    .mangasItemsTitulo{
+        margin: 25px 30px;
+        margin: 50px;
+        text-shadow: 4px 4px 5px gray;
+        h3{
+            font-weight: bolder;
+            font-size: xx-large;
+            border-bottom: 1px solid #000;
+            padding-bottom: 3px;
+        }
+    }
+    .categoriaNovedades,
+    .categoriaInfa,
+    .categoriaPopulares {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .productoCard{
+            margin: 20px;
+            padding: 5px 5px 15px 5px;
+            background-color: $color-header;
+            color: white;
+            width: 305px;
+            height: auto;
+            text-align: center;
+            border-radius: 2px;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+            }
+            img{
+                width: 300px;
+                height: 350px;
+                padding: 2px;
+            }
+            p{
+                text-align: center;
+                padding: 5px;
+            }
+            a{
+                padding: 5px 15px;
+                text-decoration: none;
+                color: white;
+                background-color: $color-nav;
+                border-radius: 5px;
+                &:hover{
+                    color: $color-header;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,158 @@
+@media screen and (max-width: 1664px){
+    .hero .heroTitulo .heroBanner .imagenBanner {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    .gridContainer {
+        grid-template-rows: 150px 80px auto auto 170px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+    "header header"
+    "navBar navBar"
+    "hero   hero"
+    "proce  proce"
+    "footer footer"
+    ;}
+    .gridContainer .footer {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width: 580px){
+    .gridContainer {
+        grid-template-rows: auto 180px auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "header"
+    "navBar"
+    "hero"
+    "proce"
+    "footer"
+    ;}
+    .gridContainer .header {
+        flex-direction: column;
+    }
+    .gridContainer .navBar ul {
+        padding-left: 0;
+        flex-direction: column;
+    }
+    .gridContainer .hero .heroCarousel {
+        width: 100%;
+    }
+    .gridContainer footer .footerLogos img {
+        height: 45px;
+        width: 45px;
+    }
+    .gridContainer footer .footerLogos h3 {
+        font-size: medium;
+    }
+    .gridContainer footer ul {
+        padding: 0%;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 460px){
+    aside {
+        flex-direction: column;
+    }
+    aside .elegiProcesadorImg {
+        margin-left: 15%;
+    }
+    .gridContainer footer .footerLogos img {
+        height: 30px;
+        width: 30px;
+    }
+}
+@media screen and (max-width: 1010px){
+    .gridContainer2{
+        grid-template-rows: 150px 80px auto auto 170px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+    "header header"
+    "navBar navBar"
+    "hero   hero"
+    "proce  proce"
+    "footer footer"
+    ;}
+    .gridContainer2 .footer {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainProductos .productosCategoria .productosIntel,
+    .mainProductos .productosCategoria .productosAmd,
+    .mainProductos .productosCategoria .productosNotebook {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 580px){
+    .gridContainer2{
+        grid-template-rows: auto 180px auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+    "header"
+    "navBar"
+    "hero"
+    "footer"
+    ;}
+    .gridContainer2 .header{
+        flex-direction: column;
+    }
+    .gridContainer2 .navBar ul{
+        padding-left: 0;
+        flex-direction: column;
+    }
+    .gridContainer2 .mainProductos .productosLinea{
+        width: 200px;
+    }
+    .gridContainer2 footer .footerLogos img{
+        height: 30px;
+        width: 30px;
+    }
+    .gridContainer2 footer .footerLogos h3{
+        font-size: medium;
+    }
+    .gridContainer2 footer ul{
+        padding: 0%;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1360px){
+    .mainCategorias .categoriaPerifericos,
+    .mainCategorias .categoriaGabinetes,
+    .mainCategorias .categoriaGpu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1160px){
+    .mainConocenos .conocenosHistoria{
+        flex-direction: column;
+    }
+    .mainConocenos .conocenosVision{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 810px){
+    .mainConocenos .conocenosHistoria .conocenosImgHistoria{
+        width: 100%;
+    }
+    .mainConocenos .conocenosVision .conocenosImgVision{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px){
+    .mainContacto .contactoForm{
+        width: 95%;
+    }
+}
